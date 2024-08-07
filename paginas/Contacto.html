@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--vinculo a la hoja de estilos-->
+        <link rel="stylesheet" href="../style.css">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <section id="encabezado-azul">
+            <img src="../imagenes/Club CUVA-01.png" alt="escudo-cuva">
+            <nav>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../paginas/Quienes somos.html">Quienes somos</a></li>
+                        <li><a href="../paginas/Actividades.html">Actividades</a></li>
+                        <li><a href="../paginas/Alquileres.html">Alquileres</a></li>
+                        <li><a href="../paginas/Fotos.html">Fotos</a></li>
+                        <li><a href="../paginas/Contacto.html">Contacto</a></li>
+                    </ul>
+            </nav>
+        </section>
+        <h1>Comunicate con nosotros</h1>
+    </header>
+    
+    <main>
+        <h2 class="contacto-h2-1">Dejanos tu consulta</h2>
+        <p class="texto-form-superior">Te responderemos a la brevedad</p>
+        <br>
+
+        <!--Formulario de contacto-->
+        <div class="form">
+            <form action="form.php" method="post">
+                <p>Nombre</p>
+                <label for="Nombre"></label>
+                <input type="text" name="Nombre" id="Nombre">
+    
+                <p>Apellido</p>
+                <label for="Apellido"></label>
+                <input type="text" name="Apellido" id="Apellido">
+                <br>
+                <br>
+    
+                <p>Teléfono</p>
+                <label for="Telefono"></label>
+                <input type="text" name="Telefono" id="Telefono">
+    
+                <p>¿En qué podemos ayudarte?</p>
+                <label for="Consulta"></label>
+                <textarea name="Consulta" id="Consulta" cols="30" rows="10" placeholder="Dejanos tu consulta acá"></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+            <h2 class="contacto-h2-2">Nuestra ubicación</h2>
+    
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.359077469668!2d-58.3962523!3d-34.6966092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccce0ca212a8f%3A0xb46de0097050ad6f!2sC.U.V.A!5e0!3m2!1ses-419!2sar!4v1720549425987!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <p class="ubicacion">Encontranos en:📍Liniers 522, Lanús Oeste</p>
+        <ul>
+            <li class="redes">
+                <a href="https://www.instagram.com/club.cuva/" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.facebook.com/ClubUnidosVillaArgerich" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+
+                <a href="club.cuva@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
