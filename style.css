@@ -143,6 +143,10 @@ h3{
     margin-left: 70%;
     margin-bottom: 3%;
 }
+
+#carouselExampleIndicators{
+    margin-left: 260px;
+}
 .carousel{
     margin-top: -25%;
     margin-left: 25%;
