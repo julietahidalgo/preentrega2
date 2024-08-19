@@ -12,8 +12,10 @@
 
 #encabezado-azul{
     background-color: #132c7c;
-    height: 125px;
+    height: 20vh;
+    width: 100vw;
 }
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -81,6 +83,10 @@ main div img{
     margin-left: 450px;
 }
 
+main div img:hover{
+    transform: scale(1.2, 1.2);
+}
+
 
 /* Pagina Quienes somos*/
 
@@ -100,7 +106,7 @@ main div img{
 .comision-directiva-texto{
     position: relative;
     top: 30%;
-    left: 55%;
+    left: 50%;
 }
 
 
@@ -120,21 +126,25 @@ h3{
     padding-left: 1.5rem;
     margin-top: 1rem;
 }
+
+.actividades__contenedor{
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
 .actividad-futbol-masculino li{
     font-family: Poppins;
-    padding-left: 1.5rem;
     list-style-type: circle;
     list-style-position: inside;
 }
 .actividad-futbol-fem{
     font-family: Poppins;
-    padding-left: 1.5rem;
     list-style-type: circle;
     list-style-position: inside;
 }
 .actividad-entrenamiento-fisico{
     font-family: Poppins;
-    padding-left: 1.5rem;
     list-style-type: circle;
     list-style-position: inside;
 }
@@ -324,7 +334,8 @@ form p{
 footer{
     display: flex;
     background-color: #132c7c;
-    height: 100px;
+    height: 20vh;
+    width: 100vw;
     font-family: Poppins;
     justify-content: space-between;
     align-items: center;
@@ -350,13 +361,20 @@ footer a:hover{
     padding-right: 0.5rem;
 }
 
+
+
 @media only screen and (max-width:500px){
     body{
         background-color: rgba(184, 186, 192, 0.411)
     }
 
+    header img{
+        width: 130px;
+    }
+
+
     .menu{
-        top: -110px;
+        top: -100px;
 
     }
 
@@ -368,6 +386,81 @@ footer a:hover{
     .menu__columna2{
         display: flex;
         flex-direction: column;
+    }
+
+    main h2{
+        display: flex;
+        margin-left: 25%;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        text-align: center;
+
+
+    }
+
+    main div img{
+        margin-left: 15%;
+        width: 350px;
+    }
+
+    header h1{
+        font-family: Poppins;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    main div img{
+        display: flex;
+        padding-left: 25px;
+        width: 250px;
+    }
+
+    .comision-directiva-texto{
+        display: flex;
+        font-size: 0.7rem;
+        overflow-wrap: break-word;
+        justify-content: start;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+
+    .ubicacion{
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+    .redes{
+        margin-right: 1rem;
+    }
+    .redes a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .actividades__contenedor{
+        font-size: 0.7rem;
+    }
+
+    .actividades__contenedor h3{
+        font-size: 1rem;
+    }
+
+    .carousel{
+        margin-top: -55%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    a.btn.btn-primary{
+        font-size: 0.7rem;
+        width: 30%;
+        height: 2%;
+        margin-left: 70%;
     }
 
 
