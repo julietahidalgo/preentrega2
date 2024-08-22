@@ -1,0 +1,24 @@
+.main__alquileres{
+    .cards__alquileres{
+        display: flex;
+        margin-bottom: 5%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        .card{
+            align-items: center;
+            .card-body{
+                .card-title{
+                    font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    .card-text{
+                        font-family: Poppins;
+                        text-align: justify;
+                        padding-left: 1rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

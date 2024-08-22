@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header #encabezado-azul {
+  background-color: #132c7c;
+  height: 20vh;
+  width: 100vw;
+}
+header #encabezado-azul img {
+  padding: 1px;
+  margin: 1px;
+  margin-bottom: -10px;
+  width: 150px;
+}
+header #encabezado-azul nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-family: Poppins;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: -90px;
+}
+header #encabezado-azul nav ul li {
+  display: inline-block;
+}
+header #encabezado-azul nav ul li a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: justify;
+  color: #ffffff;
+  position: relative;
+  padding: 2px;
+  margin-left: 100px;
+}
+header #encabezado-azul nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2666666667);
+  border-radius: 10%;
+}
+header h1 {
+  font-family: Poppins;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.main__index {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__index h2 {
+  font-family: Poppins;
+  font-style: normal;
+  text-align: center;
+}
+.main__index div img {
+  padding-left: 10px;
+  width: 450px;
+  margin-left: 450px;
+}
+.main__index div img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+footer {
+  display: flex;
+  background-color: #132c7c;
+  height: 20vh;
+  width: 100vw;
+  font-family: Poppins;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .ubicacion {
+  color: #ffffff;
+  margin-left: 4rem;
+}
+footer ul .redes {
+  list-style-type: none;
+  margin-right: 4rem;
+  padding: 0;
+  text-align: right;
+}
+footer ul .redes a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 0.5rem;
+}
+footer ul .redes a:hover {
+  background-color: rgba(255, 255, 255, 0.2666666667);
+}
+
+.main__quienes-somos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main__quienes-somos .h2-quienes-somos {
+  font-family: Poppins;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 60%;
+}
+.main__quienes-somos .comision-contenedor {
+  display: flex;
+  align-items: flex-start;
+  margin: 5px;
+  padding: 5px;
+  width: 100vw;
+}
+.main__quienes-somos .comision-contenedor .comision-directiva-texto {
+  position: relative;
+  font-family: Poppins;
+  top: 30%;
+  left: 45%;
+  overflow-wrap: break-word;
+}
+.main__quienes-somos .comision-contenedor .foto-comision {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  left: -60%;
+}
+
+.main__actividades .h2__actividades {
+  font-family: Poppins;
+  text-align: center;
+}
+.main__actividades .actividades__contenedor {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.main__actividades .actividades__contenedor h3 {
+  font-family: Poppins;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+.main__actividades .actividades__contenedor .actividad-futbol-masculino {
+  font-family: Poppins;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.main__actividades .actividades__contenedor .actividad-futbol-fem {
+  font-family: Poppins;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.main__actividades .actividades__contenedor .actividad-entrenamiento-fisico {
+  font-family: Poppins;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.main__actividades .actividades__contenedor .actividad-taekwondo {
+  font-family: Poppins;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.main__actividades #carouselExampleIndicators {
+  width: 500px;
+  position: relative;
+  left: 750px;
+  bottom: 360px;
+}
+.main__actividades .btn {
+  position: relative;
+  left: 850px;
+  bottom: 340px;
+}
+
+.main__alquileres .cards__alquileres {
+  display: flex;
+  margin-bottom: 5%;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.main__alquileres .cards__alquileres .card {
+  align-items: center;
+}
+.main__alquileres .cards__alquileres .card .card-body .card-title {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.main__alquileres .cards__alquileres .card .card-body .card-title .card-text {
+  font-family: Poppins;
+  text-align: justify;
+  padding-left: 1rem;
+}
+
+.main__fotos .fotos-salon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main__fotos .fotos-salon img {
+  display: inline-block;
+  margin: 0px;
+  margin-left: 50px;
+  border-radius: 10%;
+}
+.main__fotos .fotos-salon img .foto-salon1 {
+  width: 350px;
+}
+.main__fotos .fotos-salon img .foto-salon2 {
+  width: 400px;
+}
+.main__fotos .fotos-salon img .foto-salon3 {
+  width: 350px;
+}
+.main__fotos .fotos-cancha {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  border-radius: 10%;
+  align-items: center;
+}
+.main__fotos fotos-quincho {
+  display: inline-block;
+  margin: 0px;
+  margin-left: 50px;
+  border-radius: 10%;
+}
+.main__fotos fotos-quincho .foto-quincho1 {
+  width: 350px;
+}
+
+.main__contacto .contacto-h2-1 {
+  font-family: Poppins;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.main__contacto .texto-form-superior {
+  margin-left: 5%;
+}
+.main__contacto .form {
+  margin-left: 5%;
+}
+.main__contacto .form p {
+  text-align: left;
+  padding-left: 2px;
+}
+.main__contacto .contacto-h2-2 {
+  font-family: Poppins;
+  position: relative;
+  z-index: 1;
+  top: -25rem;
+  text-align: right;
+  margin-top: 1%;
+  margin-right: 20%;
+}
+.main__contacto .mapa {
+  position: relative;
+  left: 700px;
+  bottom: 350px;
+}
+.main__contacto .mapa .mapa iframe {
+  position: relative;
+  left: 700px;
+  top: -350px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: rgba(184, 186, 192, 0.411);
+  }
+  header img {
+    width: 120px !important;
+  }
+  .menu {
+    top: -80px;
+  }
+  .menu__columna1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__columna2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main h2 {
+    display: flex;
+    margin-left: 25%;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+  }
+  header h1 {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  main div img {
+    display: flex;
+    margin: 60px !important;
+    width: 350px !important;
+  }
+  .comision-directiva-texto {
+    display: flex;
+    font-size: 0.7rem;
+    overflow-wrap: break-word;
+    justify-content: start;
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  .ubicacion {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  .redes {
+    margin-right: 1rem;
+  }
+  .redes a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .actividades__contenedor {
+    font-size: 0.7rem;
+  }
+  .actividades__contenedor h3 {
+    font-size: 1rem;
+  }
+  .carousel {
+    margin-top: -55%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+  }
+  a.btn.btn-primary {
+    font-size: 0.7rem;
+    width: 30%;
+    height: 2%;
+    margin-left: 70%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

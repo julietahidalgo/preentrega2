@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    background-color: $color-principal;
+    height: 20vh;
+    width: 100vw;
+    font-family: Poppins;
+    justify-content: space-between;
+    align-items: center;
+    .ubicacion{
+        color: $color-letra;
+        margin-left: 4rem;
+    }
+    ul{
+        .redes{
+            list-style-type: none;
+            margin-right: 4rem;
+            padding: 0;
+            text-align: right;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                padding-right: 0.5rem;
+                &:hover{
+                    background-color: $color-hover
+                }
+            }
+        }
+    }
+}

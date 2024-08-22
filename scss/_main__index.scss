@@ -1,0 +1,22 @@
+.main__index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+        font-family: Poppins;
+        font-style: normal;
+        text-align: center;
+    }
+    div{
+        img{
+            padding-left: 10px;
+            width: 450px;
+            margin-left: 450px;
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }
+
+        }
+    }
+}

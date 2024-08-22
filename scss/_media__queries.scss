@@ -1,0 +1,98 @@
+@media only screen and (max-width:500px){
+    body{
+        background-color: rgba(184, 186, 192, 0.411)
+    }
+
+        header img{
+        width: 120px !important;
+        }
+
+
+    .menu{
+        top: -80px;
+
+    }
+
+    .menu__columna1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__columna2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h2{
+        display: flex;
+        margin-left: 25%;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        text-align: center;
+
+
+    }
+
+    header h1{
+        font-family: Poppins;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    main div img{
+        display: flex; 
+        margin: 60px !important;
+        width: 350px !important;
+    }
+
+    .comision-directiva-texto{
+        display: flex;
+        font-size: 0.7rem;
+        overflow-wrap: break-word;
+        justify-content: start;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+
+    .ubicacion{
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+    .redes{
+        margin-right: 1rem;
+    }
+    .redes a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .actividades__contenedor{
+        font-size: 0.7rem;
+    }
+
+    .actividades__contenedor h3{
+        font-size: 1rem;
+    }
+
+    .carousel{
+        margin-top: -55%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    a.btn.btn-primary{
+        font-size: 0.7rem;
+        width: 30%;
+        height: 2%;
+        margin-left: 70%;
+    }
+
+
+    
+}

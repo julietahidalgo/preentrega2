@@ -1,0 +1,34 @@
+.main__quienes-somos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .h2-quienes-somos{
+        font-family: Poppins;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        margin-left: 60%;
+    }
+    .comision-contenedor{
+        display: flex;
+        align-items: flex-start;
+        margin: 5px;
+        padding: 5px;
+        width: 100vw;
+
+        .comision-directiva-texto{
+            position: relative;
+            font-family: Poppins;
+            top: 30%;
+            left: 45%;
+            overflow-wrap: break-word;
+
+        }
+        .foto-comision{
+            position: relative;
+            top: 10%;
+            bottom: 10%;
+            left: -60%;
+        }
+
+    }
+}

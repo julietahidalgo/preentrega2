@@ -1,0 +1,48 @@
+.main__actividades{
+    .h2__actividades{
+        font-family: Poppins;
+        text-align: center;
+    }
+    .actividades__contenedor{
+        margin-left: 5%;
+        margin-top: 5%;
+        h3{
+            font-family: Poppins;
+            padding-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        .actividad-futbol-masculino{
+                font-family: Poppins;
+                list-style-type: circle;
+                list-style-position: inside;
+        }
+        .actividad-futbol-fem{
+            font-family: Poppins;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+        .actividad-entrenamiento-fisico{
+            font-family: Poppins;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+        .actividad-taekwondo{
+            font-family: Poppins;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+    }
+    #carouselExampleIndicators{
+        width: 500px;
+        position: relative;
+        left: 750px;
+        bottom: 360px;
+    }
+    .btn{
+        position: relative;
+        left: 850px;
+        bottom: 340px;
+
+    }
+}
