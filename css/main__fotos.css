@@ -1,0 +1,12 @@
+.main__fotos .Fotos-h2 {
+  text-align: center;
+  font-family: Poppins;
+}
+.main__fotos #carouselExampleCaptions {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/*# sourceMappingURL=main__fotos.css.map */
