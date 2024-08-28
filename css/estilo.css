@@ -61,12 +61,12 @@ header h1 {
   font-style: normal;
   text-align: center;
 }
-.main__index div img {
+.main__index div .foto__index {
   padding-left: 10px;
   width: 450px;
   margin-left: 450px;
 }
-.main__index div img:hover {
+.main__index div .foto__index:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -163,7 +163,7 @@ footer ul .redes a:hover {
   list-style-type: circle;
   list-style-position: inside;
 }
-.main__actividades #carouselExampleIndicators {
+.main__actividades .carousel__actividades {
   width: 500px;
   position: relative;
   left: 750px;
@@ -183,6 +183,7 @@ footer ul .redes a:hover {
 }
 .main__alquileres .cards__alquileres .card {
   align-items: center;
+  box-sizing: border-box;
 }
 .main__alquileres .cards__alquileres .card .card-body .card-title {
   font-size: 1.5rem;
@@ -194,16 +195,31 @@ footer ul .redes a:hover {
   text-align: justify;
   padding-left: 1rem;
 }
+.main__alquileres .cards__alquileres .card .card-body .boton-card {
+  text-align: center;
+}
 
 .main__fotos .Fotos-h2 {
   text-align: center;
   font-family: Poppins;
 }
 .main__fotos #carouselExampleCaptions {
-  width: 800px;
-  height: 600px;
+  width: 600px;
+  height: 400px;
   position: relative;
   margin: auto;
+  padding: 5px;
+}
+.main__fotos #carouselExampleCaptions img {
+  width: 600px;
+  height: 400px;
+  padding: 15px;
+}
+.main__fotos #carouselExampleCaptions p {
+  color: rgba(1, 18, 94, 0.8549019608);
+  background-color: rgba(255, 255, 255, 0.2862745098);
+  font-weight: bold;
+  font-family: Poppins;
 }
 
 .main__contacto .contacto-h2-1 {
@@ -243,80 +259,61 @@ footer ul .redes a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: rgba(184, 186, 192, 0.411);
+  .body {
+    background-color: rgba(83, 83, 90, 0.5215686275);
   }
-  header img {
-    width: 120px !important;
-  }
-  .menu {
-    top: -80px;
-  }
-  .menu__columna1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu__columna2 {
-    display: flex;
-    flex-direction: column;
-  }
-  main h2 {
-    display: flex;
-    margin-left: 25%;
-    font-family: Poppins;
+  /*Inicio*/
+  /*Quienes somos*/
+  .h2-quienes-somos h2 {
     font-size: 1rem;
-    font-style: normal;
-    text-align: center;
+    margin-left: -25%;
+    margin-bottom: -5%;
   }
-  header h1 {
-    font-family: Poppins;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
+  .comision-contenedor {
+    margin: 35px;
   }
-  main div img {
-    display: flex;
-    margin: 60px !important;
-    width: 350px !important;
-  }
-  .comision-directiva-texto {
-    display: flex;
+  .comision-contenedor .comision-directiva-texto {
     font-size: 0.7rem;
-    overflow-wrap: break-word;
-    justify-content: start;
   }
-  .footer {
-    justify-content: space-around;
+  .comision-contenedor .foto-comision img {
+    width: 250px;
+    padding-left: 50px;
   }
-  .ubicacion {
-    color: #ffffff;
-    font-size: 0.8rem;
-    margin-left: 0;
-  }
-  .redes {
-    margin-right: 1rem;
-  }
-  .redes a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .actividades__contenedor {
-    font-size: 0.7rem;
+  /*Actividades*/
+  .h2__actividades {
+    font-size: 1rem;
   }
   .actividades__contenedor h3 {
     font-size: 1rem;
+    font-weight: bold;
   }
-  .carousel {
-    margin-top: -55%;
-    margin-left: 25%;
-    margin-bottom: 2%;
-  }
-  a.btn.btn-primary {
+  .actividades__contenedor ul {
     font-size: 0.7rem;
-    width: 30%;
-    height: 2%;
-    margin-left: 70%;
+  }
+  .seccion__carousel-actividades .carousel__actividades {
+    width: 250px;
+    left: 100px;
+    bottom: 5px;
+    margin-top: 25px;
+  }
+  .seccion__carousel-actividades .carousel-inner img {
+    width: 250px;
+  }
+  /*Alquileres*/
+  .cards__alquileres .card .card-body .card-title {
+    font-size: 0.5rem;
+  }
+  .cards__alquileres .card .card-body p {
+    font-size: 0.7rem;
+  }
+  .cards__alquileres .card .card-body ul {
+    font-size: 0.7rem;
+  }
+  .cards__alquileres .card .card-body .boton-card {
+    margin-left: 10px;
+  }
+  .cards__alquileres .card .card-body .boton-card a {
+    font-size: 0.8rem;
   }
 }
 
