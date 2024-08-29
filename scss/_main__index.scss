@@ -3,7 +3,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    h2{
+    align-items: center;
+    .h2__index{
         font-family: Poppins;
         font-style: normal;
         text-align: center;
@@ -12,7 +13,6 @@
         .foto__index{
             padding-left: 10px;
             width: 450px;
-            margin-left: 450px;
             &:hover{
                 transform: scale(1.2, 1.2);
             }

@@ -10,10 +10,10 @@ header #encabezado-azul {
   width: 100vw;
 }
 header #encabezado-azul img {
-  padding: 1px;
+  padding: 0.5px;
   margin: 1px;
-  margin-bottom: -10px;
-  width: 150px;
+  margin-bottom: -5px;
+  width: 130px;
 }
 header #encabezado-azul nav ul {
   display: flex;
@@ -55,8 +55,9 @@ header h1 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-.main__index h2 {
+.main__index .h2__index {
   font-family: Poppins;
   font-style: normal;
   text-align: center;
@@ -64,7 +65,6 @@ header h1 {
 .main__index div .foto__index {
   padding-left: 10px;
   width: 450px;
-  margin-left: 450px;
 }
 .main__index div .foto__index:hover {
   transform: scale(1.2, 1.2);
@@ -262,7 +262,11 @@ footer ul .redes a:hover {
   .body {
     background-color: rgba(83, 83, 90, 0.5215686275);
   }
+  /*Header*/
   /*Inicio*/
+  .h2__index {
+    font-size: 1rem;
+  }
   /*Quienes somos*/
   .h2-quienes-somos h2 {
     font-size: 1rem;
@@ -314,6 +318,22 @@ footer ul .redes a:hover {
   }
   .cards__alquileres .card .card-body .boton-card a {
     font-size: 0.8rem;
+  }
+  /*Contacto*/
+  .contacto-h2-1 {
+    font-size: 1rem;
+  }
+  .contacto-h2-2 {
+    font-size: 1rem;
+    margin-top: -10rem;
+    padding-top: 450px;
+    padding-right: 200px;
+  }
+  .mapa iframe {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: -670px;
   }
 }
 
