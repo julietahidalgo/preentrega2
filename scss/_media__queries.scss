@@ -4,17 +4,21 @@
     }
 
     /*Header*/
+    .menu__columna1{
+        display: flex;
+        flex-direction: column;
+        
+    }
 
-
+    .menu__columna2{
+        display: flex;
+        flex-direction: column;
+    }
 
     /*Inicio*/
     .h2__index{
         font-size: 1rem;
     }
-
-
-
-
 
 
     /*Quienes somos*/
@@ -118,6 +122,12 @@
 
     }
 
+    /*Footer*/
+    
+    .ubicacion{
+        font-size: 0.8rem;
+        margin-left: 2rem;
+    }
 
 
 

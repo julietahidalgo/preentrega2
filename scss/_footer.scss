@@ -1,14 +1,16 @@
 footer{
     display: flex;
+    flex-direction: row;
     background-color: $color-principal;
     height: 20vh;
     width: 100vw;
     font-family: Poppins;
     justify-content: space-between;
     align-items: center;
+
     .ubicacion{
         color: $color-letra;
-        margin-left: 4rem;
+        margin-left: 3rem;
     }
     ul{
         .redes{
