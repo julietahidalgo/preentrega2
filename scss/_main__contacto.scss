@@ -1,41 +1,42 @@
 .main__contacto{
+.contacto__h2{
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    flex-wrap: wrap;
     .contacto-h2-1{
         font-family: Poppins;
         text-align: left;
-        margin-top: 5%;
-        margin-left: 5%
-
-    }
-    .texto-form-superior{
-        margin-left: 5%;
-    }
-    .form{
-        margin-left: 5%;
-        p{
-            text-align: left;
-            padding-left: 2px;
-        }
 
     }
     .contacto-h2-2{
         font-family: Poppins;
-        position: relative;
-        z-index: 1;
-        top: -25rem;
-        text-align: right;
-        margin-top: 1%;
-        margin-right: 20%;
 
     }
-    .mapa{
-        position: relative;
-        left: 700px;
-        bottom: 350px;
-        .mapa iframe{
-            position: relative;
-            left: 700px;
-            top: -350px;
+    
+}
 
+
+    .texto-form-superior{
+        font-family: Poppins;
+
+    }
+
+    .contenedor__contactomapa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        .form{
+            margin-left: 5%;
+            p{
+                text-align: left;
+                padding-left: 2px;
+            }
+    
         }
     }
+
+
 }

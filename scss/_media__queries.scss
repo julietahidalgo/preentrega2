@@ -1,4 +1,4 @@
-@media only screen and (max-width:500px){
+@media only screen and (max-width:480px){
     .body{
         background-color: $bg-color-mobile;
     }
@@ -26,22 +26,25 @@
     .h2-quienes-somos{
         h2{
             font-size: 1rem;
-            margin-left: -25%;
-            margin-bottom: -5%;
+            margin-left: 2%;
         }
-        }
-    
+    }
 
     .comision-contenedor{
-        margin: 35px;
-        .comision-directiva-texto{
-            font-size: 0.7rem;
-
+        flex-wrap: wrap;
+        justify-content: center;
+        .cd-texto-div{
+            width: 450px;
+            .comision-directiva-texto{
+                font-size: 0.7rem;
+            }
         }
         .foto-comision{
             img{
-                width: 250px;
-                padding-left: 50px;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                width: 200px;
             }
         }
     }
@@ -61,13 +64,28 @@
             font-size: 0.7rem;
         }
     }
+    .accordion{
+        margin-left: 5%;
+    }
+
+
+    .carousel-boton{
+        .btn{
+            width: 150px;
+            height: 30px;
+            align-items: center;
+            position: relative;
+            left: 60px;
+            font-size: 0.7rem;
+        }
+    }
 
     .seccion__carousel-actividades{
         .carousel__actividades{
             width: 250px;
             left: 100px;
             bottom: 5px;
-            margin-top: 25px;
+            margin: 15px;
         }
         .carousel-inner{
             img{
@@ -100,27 +118,45 @@
     }
     /*Contacto*/
     
-
+    .contacto__h2{
+        position: relative;
+        flex-direction: column;
+        width: 200px;
+    }
     .contacto-h2-1{
         font-size: 1rem;
+        text-align: center;
+        position: relative;
+        left: 120px;
+    }
+
+    .form{
+        margin: 0;
     }
 
     .contacto-h2-2{
         font-size: 1rem;
-        margin-top: -10rem;
-        padding-top: 450px;
-        padding-right: 200px;
+        position: relative;
+        text-align: center;
+        top: 370px;
+        left: 120px;
     }
 
-    .mapa{
-        iframe{
-            width: 300px;
-            height: 300px;     
+
+        .mapa{
             position: relative;
-            left: -670px;
+            bottom: -40px;
+            padding: 2%;
+            margin: 2%;
+            margin-bottom: 8%;
+            iframe{
+                width: 200px;
+                height: 200px;     
+            }
+    
         }
 
-    }
+
 
     /*Footer*/
     

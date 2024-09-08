@@ -1,34 +1,32 @@
 .main__quienes-somos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     .h2-quienes-somos{
         font-family: Poppins;
         margin-top: 2%;
         margin-bottom: 1%;
-        margin-left: 60%;
+        text-align: start;
+        margin-left: 2%;
     }
     .comision-contenedor{
         display: flex;
+        flex-direction: row;
         align-items: flex-start;
-        margin: 5px;
-        padding: 5px;
-        width: 100vw;
+        box-sizing: border-box;
 
-        .comision-directiva-texto{
-            position: relative;
-            font-family: Poppins;
-            top: 30%;
-            left: 45%;
-            overflow-wrap: break-word;
-
+        .cd-texto-div{
+            box-sizing: border-box;
+            margin-left: 2%;
+            .comision-directiva-texto{
+                font-family: Poppins;
+            }
         }
         .foto-comision{
-            position: relative;
-            top: 10%;
-            bottom: 10%;
-            left: -60%;
+            box-sizing: border-box;
+            img{
+                width: 400px;
+                margin: 5px;
+            }
         }
+
 
     }
 }

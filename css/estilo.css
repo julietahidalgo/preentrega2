@@ -7,7 +7,6 @@
 header #encabezado-azul {
   background-color: #132c7c;
   height: 20vh;
-  width: 100vw;
 }
 header #encabezado-azul img {
   padding: 0.5px;
@@ -72,7 +71,6 @@ footer {
   flex-direction: row;
   background-color: #132c7c;
   height: 20vh;
-  width: 100vw;
   font-family: Poppins;
   justify-content: space-between;
   align-items: center;
@@ -96,36 +94,32 @@ footer ul .redes a:hover {
   background-color: rgba(255, 255, 255, 0.2666666667);
 }
 
-.main__quienes-somos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 .main__quienes-somos .h2-quienes-somos {
   font-family: Poppins;
   margin-top: 2%;
   margin-bottom: 1%;
-  margin-left: 60%;
+  text-align: start;
+  margin-left: 2%;
 }
 .main__quienes-somos .comision-contenedor {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  margin: 5px;
-  padding: 5px;
-  width: 100vw;
+  box-sizing: border-box;
 }
-.main__quienes-somos .comision-contenedor .comision-directiva-texto {
-  position: relative;
+.main__quienes-somos .comision-contenedor .cd-texto-div {
+  box-sizing: border-box;
+  margin-left: 2%;
+}
+.main__quienes-somos .comision-contenedor .cd-texto-div .comision-directiva-texto {
   font-family: Poppins;
-  top: 30%;
-  left: 45%;
-  overflow-wrap: break-word;
 }
 .main__quienes-somos .comision-contenedor .foto-comision {
-  position: relative;
-  top: 10%;
-  bottom: 10%;
-  left: -60%;
+  box-sizing: border-box;
+}
+.main__quienes-somos .comision-contenedor .foto-comision img {
+  width: 400px;
+  margin: 5px;
 }
 
 .main__actividades .h2__actividades {
@@ -133,44 +127,28 @@ footer ul .redes a:hover {
   text-align: center;
 }
 .main__actividades .actividades__contenedor {
-  margin-left: 5%;
-  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main__actividades .actividades__contenedor h3 {
-  font-family: Poppins;
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-}
-.main__actividades .actividades__contenedor .actividad-futbol-masculino {
-  font-family: Poppins;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.main__actividades .actividades__contenedor .actividad-futbol-fem {
-  font-family: Poppins;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.main__actividades .actividades__contenedor .actividad-entrenamiento-fisico {
-  font-family: Poppins;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.main__actividades .actividades__contenedor .actividad-taekwondo {
-  font-family: Poppins;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.main__actividades .carousel__actividades {
-  width: 500px;
+.main__actividades .accordion {
   position: relative;
-  left: 750px;
-  bottom: 360px;
+  left: -5%;
+  width: 40%;
+  margin: 5%;
+}
+.main__actividades .seccion__carousel-actividades {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
 }
 .main__actividades .btn {
-  position: relative;
-  left: 850px;
-  bottom: 340px;
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  justify-content: center;
+  width: 200px;
 }
 
 .main__alquileres .cards__alquileres {
@@ -220,43 +198,38 @@ footer ul .redes a:hover {
   font-family: Poppins;
 }
 
-.main__contacto .contacto-h2-1 {
+.main__contacto .contacto__h2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+  flex-wrap: wrap;
+}
+.main__contacto .contacto__h2 .contacto-h2-1 {
   font-family: Poppins;
   text-align: left;
-  margin-top: 5%;
-  margin-left: 5%;
+}
+.main__contacto .contacto__h2 .contacto-h2-2 {
+  font-family: Poppins;
 }
 .main__contacto .texto-form-superior {
+  font-family: Poppins;
+}
+.main__contacto .contenedor__contactomapa {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.main__contacto .contenedor__contactomapa .form {
   margin-left: 5%;
 }
-.main__contacto .form {
-  margin-left: 5%;
-}
-.main__contacto .form p {
+.main__contacto .contenedor__contactomapa .form p {
   text-align: left;
   padding-left: 2px;
 }
-.main__contacto .contacto-h2-2 {
-  font-family: Poppins;
-  position: relative;
-  z-index: 1;
-  top: -25rem;
-  text-align: right;
-  margin-top: 1%;
-  margin-right: 20%;
-}
-.main__contacto .mapa {
-  position: relative;
-  left: 700px;
-  bottom: 350px;
-}
-.main__contacto .mapa .mapa iframe {
-  position: relative;
-  left: 700px;
-  top: -350px;
-}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .body {
     background-color: rgba(83, 83, 90, 0.5215686275);
   }
@@ -276,18 +249,23 @@ footer ul .redes a:hover {
   /*Quienes somos*/
   .h2-quienes-somos h2 {
     font-size: 1rem;
-    margin-left: -25%;
-    margin-bottom: -5%;
+    margin-left: 2%;
   }
   .comision-contenedor {
-    margin: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .comision-contenedor .comision-directiva-texto {
+  .comision-contenedor .cd-texto-div {
+    width: 450px;
+  }
+  .comision-contenedor .cd-texto-div .comision-directiva-texto {
     font-size: 0.7rem;
   }
   .comision-contenedor .foto-comision img {
-    width: 250px;
-    padding-left: 50px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 200px;
   }
   /*Actividades*/
   .h2__actividades {
@@ -300,11 +278,22 @@ footer ul .redes a:hover {
   .actividades__contenedor ul {
     font-size: 0.7rem;
   }
+  .accordion {
+    margin-left: 5%;
+  }
+  .carousel-boton .btn {
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    position: relative;
+    left: 60px;
+    font-size: 0.7rem;
+  }
   .seccion__carousel-actividades .carousel__actividades {
     width: 250px;
     left: 100px;
     bottom: 5px;
-    margin-top: 25px;
+    margin: 15px;
   }
   .seccion__carousel-actividades .carousel-inner img {
     width: 250px;
@@ -326,20 +315,37 @@ footer ul .redes a:hover {
     font-size: 0.8rem;
   }
   /*Contacto*/
+  .contacto__h2 {
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+  }
   .contacto-h2-1 {
     font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 120px;
+  }
+  .form {
+    margin: 0;
   }
   .contacto-h2-2 {
     font-size: 1rem;
-    margin-top: -10rem;
-    padding-top: 450px;
-    padding-right: 200px;
+    position: relative;
+    text-align: center;
+    top: 370px;
+    left: 120px;
+  }
+  .mapa {
+    position: relative;
+    bottom: -40px;
+    padding: 2%;
+    margin: 2%;
+    margin-bottom: 8%;
   }
   .mapa iframe {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: -670px;
+    width: 200px;
+    height: 200px;
   }
   /*Footer*/
   .ubicacion {

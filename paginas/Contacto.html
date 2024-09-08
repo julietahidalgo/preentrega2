@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../imagenes/favicon.png"> 
         <!--vinculo a la hoja de estilos-->
         <link rel="stylesheet" href="../css/estilo.css">
         <title>Contacto</title>
+        <meta name="description" content="Contactate con nosotros dejando tu consulta acá. Reservas e información sobre el club.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 <body class="body">
@@ -33,41 +35,48 @@
     </header>
     
     <main class="main__contacto">
-        <h2 class="contacto-h2-1">Dejanos tu consulta</h2>
-        <p class="texto-form-superior">Te responderemos a la brevedad</p>
-        <br>
 
-        <!--Formulario de contacto-->
-        <div class="form">
-            <form action="form.php" method="post">
-                <p>Nombre</p>
-                <label for="Nombre"></label>
-                <input type="text" name="Nombre" id="Nombre">
-    
-                <p>Apellido</p>
-                <label for="Apellido"></label>
-                <input type="text" name="Apellido" id="Apellido">
-                <br>
-                <br>
-    
-                <p>Teléfono</p>
-                <label for="Telefono"></label>
-                <input type="text" name="Telefono" id="Telefono">
-    
-                <p>¿En qué podemos ayudarte?</p>
-                <label for="Consulta"></label>
-                <textarea name="Consulta" id="Consulta" cols="30" rows="10" placeholder="Dejanos tu consulta acá"></textarea>
-    
-                <input type="submit" value="Enviar">
-            </form>
+        <div class="contacto__h2">
+            <h2 class="contacto-h2-1">Dejanos tu consulta</h2>
+            <h2 class="contacto-h2-2">Nuestra ubicación</h2>
+        </div>
+
+        <div class="contenedor__contactomapa">
+            <div class="form">
+            <p class="texto-form-superior">Te responderemos a la brevedad</p>
+                <form action="form.php" method="post">
+                    <p>Nombre</p>
+                    <label for="Nombre"></label>
+                    <input type="text" name="Nombre" id="Nombre">
+        
+                    <p>Apellido</p>
+                    <label for="Apellido"></label>
+                    <input type="text" name="Apellido" id="Apellido">
+                    <br>
+                    <br>
+        
+                    <p>Teléfono</p>
+                    <label for="Telefono"></label>
+                    <input type="text" name="Telefono" id="Telefono">
+        
+                    <p>¿En qué podemos ayudarte?</p>
+                    <label for="Consulta"></label>
+                    <textarea name="Consulta" id="Consulta" cols="30" rows="10" placeholder="Dejanos tu consulta acá"></textarea>
+        
+                    <input type="submit" value="Enviar">
+                </form>
+
+
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.359077469668!2d-58.3962523!3d-34.6966092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccce0ca212a8f%3A0xb46de0097050ad6f!2sC.U.V.A!5e0!3m2!1ses-419!2sar!4v1720549425987!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
         
-        <h2 class="contacto-h2-2">Nuestra ubicación</h2>
+
     
 
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.359077469668!2d-58.3962523!3d-34.6966092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccce0ca212a8f%3A0xb46de0097050ad6f!2sC.U.V.A!5e0!3m2!1ses-419!2sar!4v1720549425987!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
         
     </main>
     <footer>
